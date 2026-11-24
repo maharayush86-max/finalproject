@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RideEasy - Vehicle Rental</title>
+  <link rel="stylesheet" href="car.css" />
+</head>
+<body>
+  <header>
+    <h2><span>R</span> RideEasy</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#booking">Book Now</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="small-heading">VEHICLE RENTAL PLATFORM</p>
+        <h1>Rent a ride.<br><span>Enjoy the journey.</span></h1>
+        <p>Choose a car, bike or scooter for your next trip. Simple booking and affordable prices.</p>
+        <a class="button" href="#vehicles">View Vehicles</a>
+      </div>
+      <div class="hero-image">🚗</div>
+    </section>
+
+    <section class="vehicles" id="vehicles">
+      <p class="small-heading">OUR VEHICLES</p>
+      <h2>Choose your ride</h2>
+
+      <div class="vehicle-list">
+        <article class="card">
+          <div class="vehicle-picture blue">🚗</div>
+          <h3>City Car</h3>
+          <p>5 seats · Automatic</p>
+          <strong>₹1,800 <small>/ day</small></strong>
+          <a href="#booking">Book this car</a>
+        </article>
+
+        <article class="card">
+          <div class="vehicle-picture green">🏍️</div>
+          <h3>Road Bike</h3>
+          <p>2 seats · Petrol</p>
+          <strong>₹700 <small>/ day</small></strong>
+          <a href="#booking">Book this bike</a>
+        </article>
+
+        <article class="card">
+          <div class="vehicle-picture yellow">🛵</div>
+          <h3>City Scooter</h3>
+          <p>2 seats · Electric</p>
+          <strong>₹450 <small>/ day</small></strong>
+          <a href="#booking">Book this scooter</a>
+        </article>
+        <article class="card">
+          <div class="vehicle-picture yellow">🚙</div>
+          <h3>SUV</h3>
+          <p>4 seats · Petrol</p>
+          <strong>₹1000 <small>/ day</small></strong>
+          <a href="#booking">Book this scooter</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="booking-text">
+        <p class="small-heading">QUICK BOOKING</p>
+        <h2>Ready to go?</h2>
+        <p>Fill in this small form and we will reserve your vehicle.</p>
+        <ul>
+          <li>Easy online booking</li>
+          <li>No hidden charges</li>
+          <li>Available every day</li>
+        </ul>
+      </div>
+      
+
+      <form id="bookingForm">
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="vehicle">Choose a vehicle</label>
+        <select id="vehicle" required>
+          <option value="City Car">City Car</option>
+          <option value="Road Bike">Road Bike</option>
+          <option value="City Scooter">City Scooter</option>
+          <option>SUV</option>
+        </select>
+
+        <label for="date">Pick-up date</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Confirm Booking</button>
+        <p id="message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+     <section class="conatct" id="contact">
+        <div class="head">
+          <h3>For Any Query Contact us on 9024XXX, Email-xyzgmail.com</h3>
+          
+
+        </div>
+  </footer>
+
+  <script src="car.js"></script>
+</body>
+</html>
